@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>LED Web</title>
-  <link rel="stylesheet" href="lampada.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo On/Off</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="amarelo" class="led" aria-label="LED amarelo" role="img"></div>
+  <h1>Círculo On/Off</h1>
 
-  <div class="actions">
-    <button id="btnLigar" type="button" onclick="ligarAmarelo()">Ligar</button>
-    <button id="btnDesligar" type="button" onclick="desligar()">Desligar</button>
+  <!-- radio buttons escondidos -->
+  <input type="radio" name="lamp" id="acender">
+  <input type="radio" name="lamp" id="apagar" checked>
+
+  <!-- botões -->
+  <div class="buttons">
+    <label for="acender" class="btn">Acender</label>
+    <label for="apagar" class="btn">Apagar</label>
   </div>
-  
+
+  <!-- círculo -->
+  <div class="circle"></div>
 </body>
 <!-- Paho MQTT (WebSockets) link da web-->
 <!-- <script src="https://unpkg.com/paho-mqtt/mqttws31.min.js"></script>-->
